@@ -323,17 +323,18 @@
     /* ── CONTENT AREA ── */
     .content-area {
       padding: 0 72px 80px;
+      overflow: hidden;
     }
 
     /* ── SECTIONS ── */
     .section {
       padding: 56px 0 0;
       display: none;
-      animation: fadeUp 0.4s ease;
     }
 
     .section.active {
       display: block;
+      animation: fadeUp 0.4s ease;
     }
 
     @keyframes fadeUp {
@@ -363,8 +364,6 @@
       min-width: 72px;
       user-select: none;
     }
-
-    .section-title-wrap {}
 
     .section-label {
       font-family: 'JetBrains Mono', monospace;
@@ -519,8 +518,6 @@
       margin-top: 7px;
       flex-shrink: 0;
     }
-
-    .prop-item-content {}
 
     .prop-item strong {
       font-size: 17px;
@@ -1176,7 +1173,7 @@
     <!-- HERO -->
     <div class="hero">
       <div class="hero-eyebrow">Engenharia de Materiais · Processos de Fabricação</div>
-      <h2>DOMÍNIO<br>DA <span>SOLDA</span><br>GEM</h2>
+      <h2>DOMÍNIO<br>DA <span>SOLDA</span>GEM</h2>
       <p>Do conceito à prática: materiais, propriedades, processos e técnicas fundamentais para o soldador moderno.</p>
       <div class="hero-badges">
         <div class="badge hot">🔥 MIG · MAG · TIG</div>
@@ -1287,577 +1284,579 @@
           </div>
         </div>
 
-      </div>
+        <div class="divider"></div>
 
-      <div class="divider"></div>
-
-      <!-- Nível 2: Composição (não vegetais) -->
-      <div style="margin-bottom: 8px;">
-        <div class="section-label" style="margin-bottom: 8px;">Nível 2 · Quanto à Composição (minerais)</div>
-      </div>
-      <div class="card-grid" style="margin-bottom: 28px;">
-        <div class="card">
-          <span class="card-icon">⚡</span>
-          <h3>Metálicos</h3>
-          <p>Apresentam boa resistência mecânica, condutividade térmica e elétrica. São os principais materiais
-            utilizados em soldagem industrial.</p>
+        <!-- Nível 2: Composição (não vegetais) -->
+        <div style="margin-bottom: 8px;">
+          <div class="section-label" style="margin-bottom: 8px;">Nível 2 · Quanto à Composição (minerais)</div>
         </div>
-        <div class="card">
-          <span class="card-icon">🧱</span>
-          <h3>Não Metálicos</h3>
-          <p>Geralmente isolantes térmicos e elétricos. Exemplos: plásticos, cerâmicas e vidros. Podem ser unidos por
-            processos específicos (soldagem plástica, colagem), mas não por soldagem a arco convencional.</p>
+        <div class="card-grid" style="margin-bottom: 28px;">
+          <div class="card">
+            <span class="card-icon">⚡</span>
+            <h3>Metálicos</h3>
+            <p>Apresentam boa resistência mecânica, condutividade térmica e elétrica. São os principais materiais
+              utilizados em soldagem industrial.</p>
+          </div>
+          <div class="card">
+            <span class="card-icon">🧱</span>
+            <h3>Não Metálicos</h3>
+            <p>Geralmente isolantes térmicos e elétricos. Exemplos: plásticos, cerâmicas e vidros. Podem ser unidos por
+              processos específicos (soldagem plástica, colagem), mas não por soldagem a arco convencional.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="divider"></div>
+        <div class="divider"></div>
 
-      <!-- Nível 3: Metálicos → Ferrosos / Não Ferrosos -->
-      <div style="margin-bottom: 8px;">
-        <div class="section-label" style="margin-bottom: 8px;">Nível 3 · Classificação dos Metálicos</div>
-      </div>
-
-      <table class="mat-table" style="margin-bottom: 24px;">
-        <thead>
-          <tr>
-            <th>Grupo</th>
-            <th>Definição</th>
-            <th>Exemplos</th>
-            <th>Aplicações</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>⚙️ Ferrosos</td>
-            <td>Contêm ferro como principal elemento</td>
-            <td>Aço carbono, aço inoxidável, ferro fundido</td>
-            <td>Estruturas, peças mecânicas e soldagem geral</td>
-          </tr>
-          <tr>
-            <td>✨ Não Ferrosos</td>
-            <td>Não possuem ferro como base</td>
-            <td>Alumínio, cobre, titânio, latão, bronze</td>
-            <td>Peças leves, condução elétrica, resistência à corrosão</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="card-grid">
-        <div class="card">
-          <span class="card-icon">⚙️</span>
-          <h3>Aço Carbono</h3>
-          <p>O material mais soldado na indústria. Processos recomendados: MIG/MAG, eletrodo revestido, TIG.</p>
+        <!-- Nível 3: Metálicos → Ferrosos / Não Ferrosos -->
+        <div style="margin-bottom: 8px;">
+          <div class="section-label" style="margin-bottom: 8px;">Nível 3 · Classificação dos Metálicos</div>
         </div>
-        <div class="card">
-          <span class="card-icon">🔩</span>
-          <h3>Aço Inoxidável</h3>
-          <p>Exige cuidados especiais para evitar sensibilização ao cromo. Processo TIG com gás argônio é o ideal.</p>
-        </div>
-        <div class="card">
-          <span class="card-icon">🔩</span>
-          <h3>Ferro Fundido</h3>
-          <p>Frágil e com alto teor de carbono. Requer pré-aquecimento e eletrodos especiais para evitar trincas.</p>
-        </div>
-        <div class="card">
-          <span class="card-icon">💡</span>
-          <h3>Alumínio</h3>
-          <p>Leve e condutor. A camada de óxido superficial exige limpeza prévia. Processo MIG ou TIG é o indicado.</p>
-        </div>
-      </div>
 
-      <div class="nav-btns">
-        <button class="nav-btn prev" onclick="goTo(0)">← Anterior</button>
-        <button class="nav-btn next" onclick="goTo(2)">Próximo: Propriedades →</button>
-      </div>
-    </div>
+        <table class="mat-table" style="margin-bottom: 24px;">
+          <thead>
+            <tr>
+              <th>Grupo</th>
+              <th>Definição</th>
+              <th>Exemplos</th>
+              <th>Aplicações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>⚙️ Ferrosos</td>
+              <td>Contêm ferro como principal elemento</td>
+              <td>Aço carbono, aço inoxidável, ferro fundido</td>
+              <td>Estruturas, peças mecânicas e soldagem geral</td>
+            </tr>
+            <tr>
+              <td>✨ Não Ferrosos</td>
+              <td>Não possuem ferro como base</td>
+              <td>Alumínio, cobre, titânio, latão, bronze</td>
+              <td>Peças leves, condução elétrica, resistência à corrosão</td>
+            </tr>
+          </tbody>
+        </table>
 
-    <!-- SECTION 2: Propriedades -->
-    <div class="section" id="section-2">
-      <div class="section-header">
-        <div class="section-num">03</div>
-        <div class="section-title-wrap">
-          <div class="section-label">Teoria</div>
-          <h2>PROPRIEDADES DOS MATERIAIS</h2>
+        <div class="card-grid">
+          <div class="card">
+            <span class="card-icon">⚙️</span>
+            <h3>Aço Carbono</h3>
+            <p>O material mais soldado na indústria. Processos recomendados: MIG/MAG, eletrodo revestido, TIG.</p>
+          </div>
+          <div class="card">
+            <span class="card-icon">🔩</span>
+            <h3>Aço Inoxidável</h3>
+            <p>Exige cuidados especiais para evitar sensibilização ao cromo. Processo TIG com gás argônio é o ideal.</p>
+          </div>
+          <div class="card">
+            <span class="card-icon">🔩</span>
+            <h3>Ferro Fundido</h3>
+            <p>Frágil e com alto teor de carbono. Requer pré-aquecimento e eletrodos especiais para evitar trincas.</p>
+          </div>
+          <div class="card">
+            <span class="card-icon">💡</span>
+            <h3>Alumínio</h3>
+            <p>Leve e condutor. A camada de óxido superficial exige limpeza prévia. Processo MIG ou TIG é o indicado.
+            </p>
+          </div>
+        </div>
+
+        <div class="nav-btns">
+          <button class="nav-btn prev" onclick="goTo(0)">← Anterior</button>
+          <button class="nav-btn next" onclick="goTo(2)">Próximo: Propriedades →</button>
         </div>
       </div>
 
-      <p class="intro-text">As propriedades dos materiais determinam seu comportamento durante e após a soldagem. Clique
-        em cada grupo para expandir os detalhes.</p>
-
-      <!-- Mecânicas -->
-      <div class="prop-group open" id="pg-mec">
-        <div class="prop-group-header" onclick="toggleGroup('pg-mec')">
-          <span class="ico">💪</span>
-          <h3>Propriedades Mecânicas</h3>
-          <span class="chevron">▾</span>
+      <!-- SECTION 2: Propriedades -->
+      <div class="section" id="section-2">
+        <div class="section-header">
+          <div class="section-num">03</div>
+          <div class="section-title-wrap">
+            <div class="section-label">Teoria</div>
+            <h2>PROPRIEDADES DOS MATERIAIS</h2>
+          </div>
         </div>
-        <div class="prop-group-body">
-          <div class="prop-item">
-            <div class="prop-dot"></div>
-            <div class="prop-item-content">
-              <strong>Resistência à Tração</strong>
-              <span>Capacidade de suportar forças de tensão sem romper. Medida em MPa ou kgf/mm².</span>
+
+        <p class="intro-text">As propriedades dos materiais determinam seu comportamento durante e após a soldagem.
+          Clique em cada grupo para expandir os detalhes.</p>
+
+        <!-- Mecânicas -->
+        <div class="prop-group" id="pg-mec">
+          <div class="prop-group-header" onclick="toggleGroup('pg-mec')">
+            <span class="ico">💪</span>
+            <h3>Propriedades Mecânicas</h3>
+            <span class="chevron">▾</span>
+          </div>
+          <div class="prop-group-body">
+            <div class="prop-item">
+              <div class="prop-dot"></div>
+              <div class="prop-item-content">
+                <strong>Resistência à Tração</strong>
+                <span>Capacidade de suportar forças de tensão sem romper. Medida em MPa ou kgf/mm².</span>
+              </div>
+            </div>
+            <div class="prop-item">
+              <div class="prop-dot"></div>
+              <div class="prop-item-content">
+                <strong>Limite de Escoamento</strong>
+                <span>Ponto onde o material começa a deformar permanentemente (deformação plástica).</span>
+              </div>
+            </div>
+            <div class="prop-item">
+              <div class="prop-dot"></div>
+              <div class="prop-item-content">
+                <strong>Dureza</strong>
+                <span>Resistência ao desgaste e à penetração. Escalas: Vickers (HV), Brinell (HB), Rockwell
+                  (HRC).</span>
+              </div>
+            </div>
+            <div class="prop-item">
+              <div class="prop-dot"></div>
+              <div class="prop-item-content">
+                <strong>Ductilidade</strong>
+                <span>Capacidade de deformar sem quebrar — importantíssima para evitar trincas na região soldada.</span>
+              </div>
+            </div>
+            <div class="prop-item">
+              <div class="prop-dot"></div>
+              <div class="prop-item-content">
+                <strong>Tenacidade</strong>
+                <span>Resistência a impactos e cargas dinâmicas. Alta tenacidade é essencial em juntas
+                  estruturais.</span>
+              </div>
+            </div>
+            <div class="prop-item">
+              <div class="prop-dot"></div>
+              <div class="prop-item-content">
+                <strong>Fadiga</strong>
+                <span>Resistência a esforços repetitivos e cíclicos ao longo do tempo.</span>
+              </div>
             </div>
           </div>
-          <div class="prop-item">
-            <div class="prop-dot"></div>
-            <div class="prop-item-content">
-              <strong>Limite de Escoamento</strong>
-              <span>Ponto onde o material começa a deformar permanentemente (deformação plástica).</span>
+        </div>
+
+        <!-- Térmicas -->
+        <div class="prop-group" id="pg-ter">
+          <div class="prop-group-header" onclick="toggleGroup('pg-ter')">
+            <span class="ico">🌡️</span>
+            <h3>Propriedades Térmicas</h3>
+            <span class="chevron">▾</span>
+          </div>
+          <div class="prop-group-body">
+            <div class="prop-item">
+              <div class="prop-dot"></div>
+              <div class="prop-item-content">
+                <strong>Condutividade Térmica</strong>
+                <span>Capacidade de conduzir calor. Materiais com alta condutividade (como cobre e alumínio) dissipam
+                  calor rapidamente, dificultando a soldagem.</span>
+              </div>
+            </div>
+            <div class="prop-item">
+              <div class="prop-dot"></div>
+              <div class="prop-item-content">
+                <strong>Calor Específico</strong>
+                <span>Quantidade de energia necessária para elevar 1°C de 1 kg do material. Afeta a energia necessária
+                  no processo de soldagem.</span>
+              </div>
+            </div>
+            <div class="prop-item">
+              <div class="prop-dot"></div>
+              <div class="prop-item-content">
+                <strong>Expansão Térmica</strong>
+                <span>Variação dimensional com a temperatura. Diferenças de expansão entre materiais podem gerar tensões
+                  residuais e distorções na junta.</span>
+              </div>
             </div>
           </div>
-          <div class="prop-item">
-            <div class="prop-dot"></div>
-            <div class="prop-item-content">
-              <strong>Dureza</strong>
-              <span>Resistência ao desgaste e à penetração. Escalas: Vickers (HV), Brinell (HB), Rockwell (HRC).</span>
+        </div>
+
+        <!-- Elétricas -->
+        <div class="prop-group" id="pg-ele">
+          <div class="prop-group-header" onclick="toggleGroup('pg-ele')">
+            <span class="ico">⚡</span>
+            <h3>Propriedades Elétricas</h3>
+            <span class="chevron">▾</span>
+          </div>
+          <div class="prop-group-body">
+            <div class="prop-item">
+              <div class="prop-dot"></div>
+              <div class="prop-item-content">
+                <strong>Condutividade Elétrica</strong>
+                <span>Facilidade de conduzir eletricidade. Relevante nos processos de soldagem a arco elétrico.</span>
+              </div>
+            </div>
+            <div class="prop-item">
+              <div class="prop-dot"></div>
+              <div class="prop-item-content">
+                <strong>Resistividade</strong>
+                <span>Oposição à passagem de corrente elétrica. A resistividade influencia o calor gerado na zona de
+                  soldagem.</span>
+              </div>
             </div>
           </div>
-          <div class="prop-item">
-            <div class="prop-dot"></div>
-            <div class="prop-item-content">
-              <strong>Ductilidade</strong>
-              <span>Capacidade de deformar sem quebrar — importantíssima para evitar trincas na região soldada.</span>
+        </div>
+
+        <!-- Químicas -->
+        <div class="prop-group" id="pg-qui">
+          <div class="prop-group-header" onclick="toggleGroup('pg-qui')">
+            <span class="ico">🧪</span>
+            <h3>Propriedades Químicas</h3>
+            <span class="chevron">▾</span>
+          </div>
+          <div class="prop-group-body">
+            <div class="prop-item">
+              <div class="prop-dot"></div>
+              <div class="prop-item-content">
+                <strong>Resistência à Corrosão</strong>
+                <span>Capacidade de resistir à oxidação e reação com o ambiente. Essencial na escolha de materiais para
+                  ambientes agressivos.</span>
+              </div>
+            </div>
+            <div class="prop-item">
+              <div class="prop-dot"></div>
+              <div class="prop-item-content">
+                <strong>Reatividade</strong>
+                <span>Tendência de reagir com outros elementos, como o oxigênio do ar durante a soldagem. É por isso que
+                  gases de proteção são utilizados.</span>
+              </div>
             </div>
           </div>
-          <div class="prop-item">
-            <div class="prop-dot"></div>
-            <div class="prop-item-content">
-              <strong>Tenacidade</strong>
-              <span>Resistência a impactos e cargas dinâmicas. Alta tenacidade é essencial em juntas estruturais.</span>
-            </div>
-          </div>
-          <div class="prop-item">
-            <div class="prop-dot"></div>
-            <div class="prop-item-content">
-              <strong>Fadiga</strong>
-              <span>Resistência a esforços repetitivos e cíclicos ao longo do tempo.</span>
-            </div>
-          </div>
+        </div>
+
+        <div class="nav-btns">
+          <button class="nav-btn prev" onclick="goTo(1)">← Anterior</button>
+          <button class="nav-btn next" onclick="goTo(3)">Próximo: Unidades →</button>
         </div>
       </div>
 
-      <!-- Térmicas -->
-      <div class="prop-group" id="pg-ter">
-        <div class="prop-group-header" onclick="toggleGroup('pg-ter')">
-          <span class="ico">🌡️</span>
-          <h3>Propriedades Térmicas</h3>
-          <span class="chevron">▾</span>
+      <!-- SECTION 3: Unidades -->
+      <div class="section" id="section-3">
+        <div class="section-header">
+          <div class="section-num">04</div>
+          <div class="section-title-wrap">
+            <div class="section-label">Conversão</div>
+            <h2>UNIDADES DE MEDIDA</h2>
+          </div>
         </div>
-        <div class="prop-group-body">
-          <div class="prop-item">
-            <div class="prop-dot"></div>
-            <div class="prop-item-content">
-              <strong>Condutividade Térmica</strong>
-              <span>Capacidade de conduzir calor. Materiais com alta condutividade (como cobre e alumínio) dissipam
-                calor rapidamente, dificultando a soldagem.</span>
+
+        <p class="intro-text">Na soldagem é fundamental saber trabalhar com diferentes sistemas de unidades,
+          especialmente para temperatura, corrente elétrica e tensão mecânica. Use o conversor abaixo para praticar.</p>
+
+        <div class="converter-box">
+          <h3>CONVERSOR DE TEMPERATURA</h3>
+          <div class="sub">Fahrenheit → Celsius</div>
+          <div class="formula-display">°C = (°F − 32) × 5 ÷ 9</div>
+          <div class="input-row">
+            <div class="input-group">
+              <label>TEMPERATURA (°F)</label>
+              <input type="number" id="temp-f" placeholder="ex: 150" />
             </div>
+            <button class="convert-btn" onclick="convertTemp()">Converter</button>
           </div>
-          <div class="prop-item">
-            <div class="prop-dot"></div>
-            <div class="prop-item-content">
-              <strong>Calor Específico</strong>
-              <span>Quantidade de energia necessária para elevar 1°C de 1 kg do material. Afeta a energia necessária no
-                processo de soldagem.</span>
-            </div>
+          <div class="result-display" id="result-display">
+            <div class="result-num" id="result-num">—</div>
+            <div class="result-label">graus Celsius (°C)</div>
           </div>
-          <div class="prop-item">
-            <div class="prop-dot"></div>
-            <div class="prop-item-content">
-              <strong>Expansão Térmica</strong>
-              <span>Variação dimensional com a temperatura. Diferenças de expansão entre materiais podem gerar tensões
-                residuais e distorções na junta.</span>
-            </div>
-          </div>
+        </div>
+
+        <div class="highlight-box" style="margin-top: 28px;">
+          <div class="hico">📏</div>
+          <p>
+            <strong>Dica prática:</strong> Na soldagem MIG/MAG, a temperatura de trabalho varia tipicamente entre 1400°C
+            e 1700°C (2552°F–3092°F). O pré-aquecimento de aços pode ser exigido a partir de 100°C (212°F).
+          </p>
+        </div>
+
+        <div class="nav-btns">
+          <button class="nav-btn prev" onclick="goTo(2)">← Anterior</button>
+          <button class="nav-btn next" onclick="goTo(4)">Próximo: Aplicação →</button>
         </div>
       </div>
 
-      <!-- Elétricas -->
-      <div class="prop-group" id="pg-ele">
-        <div class="prop-group-header" onclick="toggleGroup('pg-ele')">
-          <span class="ico">⚡</span>
-          <h3>Propriedades Elétricas</h3>
-          <span class="chevron">▾</span>
-        </div>
-        <div class="prop-group-body">
-          <div class="prop-item">
-            <div class="prop-dot"></div>
-            <div class="prop-item-content">
-              <strong>Condutividade Elétrica</strong>
-              <span>Facilidade de conduzir eletricidade. Relevante nos processos de soldagem a arco elétrico.</span>
-            </div>
-          </div>
-          <div class="prop-item">
-            <div class="prop-dot"></div>
-            <div class="prop-item-content">
-              <strong>Resistividade</strong>
-              <span>Oposição à passagem de corrente elétrica. A resistividade influencia o calor gerado na zona de
-                soldagem.</span>
-            </div>
+      <!-- SECTION 4: Aplicação -->
+      <div class="section" id="section-4">
+        <div class="section-header">
+          <div class="section-num">05</div>
+          <div class="section-title-wrap">
+            <div class="section-label">Prática</div>
+            <h2>APLICAÇÃO PRÁTICA</h2>
           </div>
         </div>
-      </div>
 
-      <!-- Químicas -->
-      <div class="prop-group" id="pg-qui">
-        <div class="prop-group-header" onclick="toggleGroup('pg-qui')">
-          <span class="ico">🧪</span>
-          <h3>Propriedades Químicas</h3>
-          <span class="chevron">▾</span>
-        </div>
-        <div class="prop-group-body">
-          <div class="prop-item">
-            <div class="prop-dot"></div>
-            <div class="prop-item-content">
+        <p class="intro-text">Na escolha de materiais para soldagem, múltiplos fatores devem ser considerados em
+          conjunto. Ignorar qualquer um desses fatores pode comprometer a integridade da junta soldada.</p>
+
+        <div class="factor-list">
+          <div class="factor-item">
+            <div class="factor-icon">🔩</div>
+            <div class="factor-text">
+              <strong>Resistência Mecânica</strong>
+              <span>O material deve suportar as cargas previstas em serviço, incluindo esforços estáticos e
+                dinâmicos.</span>
+            </div>
+          </div>
+          <div class="factor-item">
+            <div class="factor-icon">🛡️</div>
+            <div class="factor-text">
               <strong>Resistência à Corrosão</strong>
-              <span>Capacidade de resistir à oxidação e reação com o ambiente. Essencial na escolha de materiais para
-                ambientes agressivos.</span>
+              <span>Ambientes úmidos, químicos ou marinhos exigem aços inoxidáveis ou ligas de alumínio com boa
+                proteção.</span>
             </div>
           </div>
-          <div class="prop-item">
-            <div class="prop-dot"></div>
-            <div class="prop-item-content">
-              <strong>Reatividade</strong>
-              <span>Tendência de reagir com outros elementos, como o oxigênio do ar durante a soldagem. É por isso que
-                gases de proteção são utilizados.</span>
+          <div class="factor-item">
+            <div class="factor-icon">🌡️</div>
+            <div class="factor-text">
+              <strong>Condutividade Térmica</strong>
+              <span>Materiais com alta condutividade dissipam calor rapidamente, exigindo ajustes no processo e na
+                velocidade de soldagem.</span>
+            </div>
+          </div>
+          <div class="factor-item">
+            <div class="factor-icon">🔥</div>
+            <div class="factor-text">
+              <strong>Comportamento sob Temperatura</strong>
+              <span>O material deve manter suas propriedades em altas temperaturas de operação, sem amolecimento ou
+                deformação excessiva.</span>
+            </div>
+          </div>
+          <div class="factor-item">
+            <div class="factor-icon">💰</div>
+            <div class="factor-text">
+              <strong>Custo e Disponibilidade</strong>
+              <span>O custo do material e dos consumíveis (eletrodo, gás) impacta diretamente a viabilidade do
+                projeto.</span>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="nav-btns">
-        <button class="nav-btn prev" onclick="goTo(1)">← Anterior</button>
-        <button class="nav-btn next" onclick="goTo(3)">Próximo: Unidades →</button>
-      </div>
-    </div>
-
-    <!-- SECTION 3: Unidades -->
-    <div class="section" id="section-3">
-      <div class="section-header">
-        <div class="section-num">04</div>
-        <div class="section-title-wrap">
-          <div class="section-label">Conversão</div>
-          <h2>UNIDADES DE MEDIDA</h2>
+        <div class="nav-btns">
+          <button class="nav-btn prev" onclick="goTo(3)">← Anterior</button>
+          <button class="nav-btn next" onclick="goTo(5)">Próximo: Tipos de Soldagem →</button>
         </div>
       </div>
 
-      <p class="intro-text">Na soldagem é fundamental saber trabalhar com diferentes sistemas de unidades, especialmente
-        para temperatura, corrente elétrica e tensão mecânica. Use o conversor abaixo para praticar.</p>
-
-      <div class="converter-box">
-        <h3>CONVERSOR DE TEMPERATURA</h3>
-        <div class="sub">Fahrenheit → Celsius</div>
-        <div class="formula-display">°C = (°F − 32) × 5 ÷ 9</div>
-        <div class="input-row">
-          <div class="input-group">
-            <label>TEMPERATURA (°F)</label>
-            <input type="number" id="temp-f" placeholder="ex: 150" />
+      <!-- SECTION 5: Tipos de Soldagem -->
+      <div class="section" id="section-5">
+        <div class="section-header">
+          <div class="section-num">06</div>
+          <div class="section-title-wrap">
+            <div class="section-label">Processos</div>
+            <h2>TIPOS DE SOLDAGEM</h2>
           </div>
-          <button class="convert-btn" onclick="convertTemp()">Converter</button>
         </div>
-        <div class="result-display" id="result-display">
-          <div class="result-num" id="result-num">—</div>
-          <div class="result-label">graus Celsius (°C)</div>
+
+        <p class="intro-text">Cada processo de soldagem possui características únicas que o tornam mais adequado para
+          determinados materiais e situações. Conheça os principais.</p>
+
+        <div class="weld-cards">
+
+          <div class="weld-card weld-mig">
+            <div class="weld-card-head">
+              <div class="weld-badge">MIG</div>
+              <div class="weld-card-head-text">
+                <h3>Metal Inert Gas</h3>
+                <span class="full-name">Soldagem MIG</span>
+              </div>
+            </div>
+            <div class="weld-card-body">
+              <div class="weld-tag-row">
+                <span class="weld-tag">Argônio</span>
+                <span class="weld-tag">Hélio</span>
+                <span class="weld-tag">Não Ferrosos</span>
+              </div>
+              <ul class="weld-features">
+                <li>Utiliza gás inerte (Argônio ou Hélio) como proteção</li>
+                <li>Indicado para alumínio e metais não ferrosos</li>
+                <li>Alta qualidade de solda com menor oxidação</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="weld-card weld-mag">
+            <div class="weld-card-head">
+              <div class="weld-badge">MAG</div>
+              <div class="weld-card-head-text">
+                <h3>Metal Active Gas</h3>
+                <span class="full-name">Soldagem MAG</span>
+              </div>
+            </div>
+            <div class="weld-card-body">
+              <div class="weld-tag-row">
+                <span class="weld-tag">CO₂</span>
+                <span class="weld-tag">Mistura</span>
+                <span class="weld-tag">Aços</span>
+              </div>
+              <ul class="weld-features">
+                <li>Utiliza gás ativo (CO₂ ou mistura) como proteção</li>
+                <li>Indicado principalmente para aços carbono</li>
+                <li>Processo mais barato, porém com mais respingos</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="weld-card weld-tig">
+            <div class="weld-card-head">
+              <div class="weld-badge">TIG</div>
+              <div class="weld-card-head-text">
+                <h3>Tungsten Inert Gas</h3>
+                <span class="full-name">Soldagem TIG</span>
+              </div>
+            </div>
+            <div class="weld-card-body">
+              <div class="weld-tag-row">
+                <span class="weld-tag">Tungstênio</span>
+                <span class="weld-tag">Argônio</span>
+                <span class="weld-tag">Alta Precisão</span>
+              </div>
+              <ul class="weld-features">
+                <li>Eletrodo de tungstênio não consumível</li>
+                <li>Gás inerte argônio como proteção</li>
+                <li>Alta precisão e excelente acabamento superficial</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="weld-card weld-ele">
+            <div class="weld-card-head">
+              <div class="weld-badge" style="font-size:14px; letter-spacing:1px;">ELETR.</div>
+              <div class="weld-card-head-text">
+                <h3>Eletrodo Revestido</h3>
+                <span class="full-name">SMAW / Soldagem Manual</span>
+              </div>
+            </div>
+            <div class="weld-card-body">
+              <div class="weld-tag-row">
+                <span class="weld-tag">Consumível</span>
+                <span class="weld-tag">Sem gás externo</span>
+                <span class="weld-tag">Campo</span>
+              </div>
+              <ul class="weld-features">
+                <li>Utiliza eletrodo consumível com revestimento flux</li>
+                <li>Não necessita de gás de proteção externo</li>
+                <li>Muito utilizado em campo e manutenção geral</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="weld-card weld-oxy">
+            <div class="weld-card-head">
+              <div class="weld-badge" style="font-size:14px; letter-spacing:1px;">OXI.</div>
+              <div class="weld-card-head-text">
+                <h3>Oxiacetileno</h3>
+                <span class="full-name">Soldagem a Gás</span>
+              </div>
+            </div>
+            <div class="weld-card-body">
+              <div class="weld-tag-row">
+                <span class="weld-tag">O₂ + C₂H₂</span>
+                <span class="weld-tag">Portátil</span>
+                <span class="weld-tag">Simples</span>
+              </div>
+              <ul class="weld-features">
+                <li>Mistura de oxigênio e acetileno para chama</li>
+                <li>Processo simples e portátil, sem necessidade de energia elétrica</li>
+                <li>Menor controle térmico comparado aos processos a arco</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="nav-btns">
+          <button class="nav-btn prev" onclick="goTo(4)">← Anterior</button>
+          <button class="nav-btn next" onclick="goTo(6)">Próximo: Exercícios →</button>
         </div>
       </div>
 
-      <div class="highlight-box" style="margin-top: 28px;">
-        <div class="hico">📏</div>
-        <p>
-          <strong>Dica prática:</strong> Na soldagem MIG/MAG, a temperatura de trabalho varia tipicamente entre 1400°C e
-          1700°C (2552°F–3092°F). O pré-aquecimento de aços pode ser exigido a partir de 100°C (212°F).
+      <!-- SECTION 6: Exercícios -->
+      <div class="section" id="section-6">
+        <div class="section-header">
+          <div class="section-num">07</div>
+          <div class="section-title-wrap">
+            <div class="section-label">Avaliação</div>
+            <h2>EXERCÍCIOS</h2>
+          </div>
+        </div>
+
+        <p class="intro-text">Teste seus conhecimentos. Reflita sobre cada questão e depois revele a resposta sugerida.
         </p>
-      </div>
 
-      <div class="nav-btns">
-        <button class="nav-btn prev" onclick="goTo(2)">← Anterior</button>
-        <button class="nav-btn next" onclick="goTo(4)">Próximo: Aplicação →</button>
-      </div>
-    </div>
+        <div class="quiz-container">
 
-    <!-- SECTION 4: Aplicação -->
-    <div class="section" id="section-4">
-      <div class="section-header">
-        <div class="section-num">05</div>
-        <div class="section-title-wrap">
-          <div class="section-label">Prática</div>
-          <h2>APLICAÇÃO PRÁTICA</h2>
-        </div>
-      </div>
-
-      <p class="intro-text">Na escolha de materiais para soldagem, múltiplos fatores devem ser considerados em conjunto.
-        Ignorar qualquer um desses fatores pode comprometer a integridade da junta soldada.</p>
-
-      <div class="factor-list">
-        <div class="factor-item">
-          <div class="factor-icon">🔩</div>
-          <div class="factor-text">
-            <strong>Resistência Mecânica</strong>
-            <span>O material deve suportar as cargas previstas em serviço, incluindo esforços estáticos e
-              dinâmicos.</span>
-          </div>
-        </div>
-        <div class="factor-item">
-          <div class="factor-icon">🛡️</div>
-          <div class="factor-text">
-            <strong>Resistência à Corrosão</strong>
-            <span>Ambientes úmidos, químicos ou marinhos exigem aços inoxidáveis ou ligas de alumínio com boa
-              proteção.</span>
-          </div>
-        </div>
-        <div class="factor-item">
-          <div class="factor-icon">🌡️</div>
-          <div class="factor-text">
-            <strong>Condutividade Térmica</strong>
-            <span>Materiais com alta condutividade dissipam calor rapidamente, exigindo ajustes no processo e na
-              velocidade de soldagem.</span>
-          </div>
-        </div>
-        <div class="factor-item">
-          <div class="factor-icon">🔥</div>
-          <div class="factor-text">
-            <strong>Comportamento sob Temperatura</strong>
-            <span>O material deve manter suas propriedades em altas temperaturas de operação, sem amolecimento ou
-              deformação excessiva.</span>
-          </div>
-        </div>
-        <div class="factor-item">
-          <div class="factor-icon">💰</div>
-          <div class="factor-text">
-            <strong>Custo e Disponibilidade</strong>
-            <span>O custo do material e dos consumíveis (eletrodo, gás) impacta diretamente a viabilidade do
-              projeto.</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="nav-btns">
-        <button class="nav-btn prev" onclick="goTo(3)">← Anterior</button>
-        <button class="nav-btn next" onclick="goTo(5)">Próximo: Tipos de Soldagem →</button>
-      </div>
-    </div>
-
-    <!-- SECTION 5: Tipos de Soldagem -->
-    <div class="section" id="section-5">
-      <div class="section-header">
-        <div class="section-num">06</div>
-        <div class="section-title-wrap">
-          <div class="section-label">Processos</div>
-          <h2>TIPOS DE SOLDAGEM</h2>
-        </div>
-      </div>
-
-      <p class="intro-text">Cada processo de soldagem possui características únicas que o tornam mais adequado para
-        determinados materiais e situações. Conheça os principais.</p>
-
-      <div class="weld-cards">
-
-        <div class="weld-card weld-mig">
-          <div class="weld-card-head">
-            <div class="weld-badge">MIG</div>
-            <div class="weld-card-head-text">
-              <h3>Metal Inert Gas</h3>
-              <span class="full-name">Soldagem MIG</span>
+          <div class="quiz-q">
+            <div class="q-number">Questão 01</div>
+            <p>Diferencie materiais ferrosos e não ferrosos, dando dois exemplos de cada grupo.</p>
+            <button class="show-btn" onclick="toggleAnswer(this)">▶ Ver resposta</button>
+            <div class="quiz-answer">
+              <p><strong>Materiais ferrosos</strong> possuem ferro como principal elemento (ex: aço carbono, ferro
+                fundido). <strong>Materiais não ferrosos</strong> não contêm ferro como componente principal (ex:
+                alumínio, cobre). A distinção é fundamental pois define o processo de soldagem, o tipo de gás de
+                proteção e o eletrodo a ser utilizado.</p>
             </div>
           </div>
-          <div class="weld-card-body">
-            <div class="weld-tag-row">
-              <span class="weld-tag">Argônio</span>
-              <span class="weld-tag">Hélio</span>
-              <span class="weld-tag">Não Ferrosos</span>
+
+          <div class="quiz-q">
+            <div class="q-number">Questão 02</div>
+            <p>Cite três propriedades mecânicas relevantes para a soldagem e explique cada uma brevemente.</p>
+            <button class="show-btn" onclick="toggleAnswer(this)">▶ Ver resposta</button>
+            <div class="quiz-answer">
+              <p><strong>Resistência à tração:</strong> capacidade de suportar forças sem romper — essencial para juntas
+                estruturais. <strong>Ductilidade:</strong> capacidade de deformar sem fraturar — materiais pouco dúcteis
+                tendem a trincar durante ou após a soldagem. <strong>Tenacidade:</strong> resistência a impactos —
+                importante em equipamentos sujeitos a cargas dinâmicas.</p>
             </div>
-            <ul class="weld-features">
-              <li>Utiliza gás inerte (Argônio ou Hélio) como proteção</li>
-              <li>Indicado para alumínio e metais não ferrosos</li>
-              <li>Alta qualidade de solda com menor oxidação</li>
-            </ul>
           </div>
+
+          <div class="quiz-q">
+            <div class="q-number">Questão 03</div>
+            <p>Por que a resistência à corrosão é importante na escolha de materiais para soldagem?</p>
+            <button class="show-btn" onclick="toggleAnswer(this)">▶ Ver resposta</button>
+            <div class="quiz-answer">
+              <p>Em ambientes agressivos (salinos, úmidos, químicos), a corrosão pode degradar a junta soldada,
+                comprometendo a integridade estrutural. Materiais com baixa resistência à corrosão podem requerer
+                tratamentos superficiais adicionais ou ser substituídos por ligas mais resistentes, como aços
+                inoxidáveis ou alumínio.</p>
+            </div>
+          </div>
+
+          <div class="quiz-q">
+            <div class="q-number">Questão 04</div>
+            <p>Converta 150°F para Celsius utilizando a fórmula aprendida no minicurso.</p>
+            <button class="show-btn" onclick="toggleAnswer(this)">▶ Ver resposta</button>
+            <div class="quiz-answer">
+              <p>Fórmula: (F − 32) × 5 ÷ 9<br><br>
+                (150 − 32) × 5 ÷ 9 = 118 × 5 ÷ 9 = 590 ÷ 9 ≈ <strong>65,6°C</strong></p>
+            </div>
+          </div>
+
+          <div class="quiz-q">
+            <div class="q-number">Questão 05</div>
+            <p>Qual material e processo de soldagem você escolheria para estruturas expostas a um ambiente marinho
+              (corrosivo) e por quê?</p>
+            <button class="show-btn" onclick="toggleAnswer(this)">▶ Ver resposta</button>
+            <div class="quiz-answer">
+              <p>Para ambiente marinho (corrosivo), o ideal seria utilizar <strong>aço inoxidável 316L</strong> (com
+                molibdênio, que aumenta a resistência à corrosão por cloretos) soldado pelo processo
+                <strong>TIG</strong> com argônio puro. Esse processo garante alta precisão, baixa contaminação da solda
+                e excelente qualidade metalúrgica da junta, essencial em ambientes agressivos.
+              </p>
+            </div>
+          </div>
+
         </div>
 
-        <div class="weld-card weld-mag">
-          <div class="weld-card-head">
-            <div class="weld-badge">MAG</div>
-            <div class="weld-card-head-text">
-              <h3>Metal Active Gas</h3>
-              <span class="full-name">Soldagem MAG</span>
-            </div>
-          </div>
-          <div class="weld-card-body">
-            <div class="weld-tag-row">
-              <span class="weld-tag">CO₂</span>
-              <span class="weld-tag">Mistura</span>
-              <span class="weld-tag">Aços</span>
-            </div>
-            <ul class="weld-features">
-              <li>Utiliza gás ativo (CO₂ ou mistura) como proteção</li>
-              <li>Indicado principalmente para aços carbono</li>
-              <li>Processo mais barato, porém com mais respingos</li>
-            </ul>
-          </div>
+        <div class="completion">
+          <div class="big-icon">🏆</div>
+          <h2>PARABÉNS!</h2>
+          <p>Você concluiu o Minicurso de Soldagem. Continue praticando e aprofundando seus conhecimentos em materiais e
+            processos de fabricação.</p>
+          <button class="restart-btn" onclick="goTo(0)">🔄 Recomeçar do início</button>
         </div>
 
-        <div class="weld-card weld-tig">
-          <div class="weld-card-head">
-            <div class="weld-badge">TIG</div>
-            <div class="weld-card-head-text">
-              <h3>Tungsten Inert Gas</h3>
-              <span class="full-name">Soldagem TIG</span>
-            </div>
-          </div>
-          <div class="weld-card-body">
-            <div class="weld-tag-row">
-              <span class="weld-tag">Tungstênio</span>
-              <span class="weld-tag">Argônio</span>
-              <span class="weld-tag">Alta Precisão</span>
-            </div>
-            <ul class="weld-features">
-              <li>Eletrodo de tungstênio não consumível</li>
-              <li>Gás inerte argônio como proteção</li>
-              <li>Alta precisão e excelente acabamento superficial</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="weld-card weld-ele">
-          <div class="weld-card-head">
-            <div class="weld-badge" style="font-size:14px; letter-spacing:1px;">ELETR.</div>
-            <div class="weld-card-head-text">
-              <h3>Eletrodo Revestido</h3>
-              <span class="full-name">SMAW / Soldagem Manual</span>
-            </div>
-          </div>
-          <div class="weld-card-body">
-            <div class="weld-tag-row">
-              <span class="weld-tag">Consumível</span>
-              <span class="weld-tag">Sem gás externo</span>
-              <span class="weld-tag">Campo</span>
-            </div>
-            <ul class="weld-features">
-              <li>Utiliza eletrodo consumível com revestimento flux</li>
-              <li>Não necessita de gás de proteção externo</li>
-              <li>Muito utilizado em campo e manutenção geral</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="weld-card weld-oxy">
-          <div class="weld-card-head">
-            <div class="weld-badge" style="font-size:14px; letter-spacing:1px;">OXI.</div>
-            <div class="weld-card-head-text">
-              <h3>Oxiacetileno</h3>
-              <span class="full-name">Soldagem a Gás</span>
-            </div>
-          </div>
-          <div class="weld-card-body">
-            <div class="weld-tag-row">
-              <span class="weld-tag">O₂ + C₂H₂</span>
-              <span class="weld-tag">Portátil</span>
-              <span class="weld-tag">Simples</span>
-            </div>
-            <ul class="weld-features">
-              <li>Mistura de oxigênio e acetileno para chama</li>
-              <li>Processo simples e portátil, sem necessidade de energia elétrica</li>
-              <li>Menor controle térmico comparado aos processos a arco</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="nav-btns">
-        <button class="nav-btn prev" onclick="goTo(4)">← Anterior</button>
-        <button class="nav-btn next" onclick="goTo(6)">Próximo: Exercícios →</button>
-      </div>
-    </div>
-
-    <!-- SECTION 6: Exercícios -->
-    <div class="section" id="section-6">
-      <div class="section-header">
-        <div class="section-num">07</div>
-        <div class="section-title-wrap">
-          <div class="section-label">Avaliação</div>
-          <h2>EXERCÍCIOS</h2>
+        <div class="nav-btns">
+          <button class="nav-btn prev" onclick="goTo(5)">← Anterior: Tipos de Soldagem</button>
         </div>
       </div>
-
-      <p class="intro-text">Teste seus conhecimentos. Reflita sobre cada questão e depois revele a resposta sugerida.
-      </p>
-
-      <div class="quiz-container">
-
-        <div class="quiz-q">
-          <div class="q-number">Questão 01</div>
-          <p>Diferencie materiais ferrosos e não ferrosos, dando dois exemplos de cada grupo.</p>
-          <button class="show-btn" onclick="toggleAnswer(this)">▶ Ver resposta</button>
-          <div class="quiz-answer">
-            <p><strong>Materiais ferrosos</strong> possuem ferro como principal elemento (ex: aço carbono, ferro
-              fundido). <strong>Materiais não ferrosos</strong> não contêm ferro como componente principal (ex:
-              alumínio, cobre). A distinção é fundamental pois define o processo de soldagem, o tipo de gás de proteção
-              e o eletrodo a ser utilizado.</p>
-          </div>
-        </div>
-
-        <div class="quiz-q">
-          <div class="q-number">Questão 02</div>
-          <p>Cite três propriedades mecânicas relevantes para a soldagem e explique cada uma brevemente.</p>
-          <button class="show-btn" onclick="toggleAnswer(this)">▶ Ver resposta</button>
-          <div class="quiz-answer">
-            <p><strong>Resistência à tração:</strong> capacidade de suportar forças sem romper — essencial para juntas
-              estruturais. <strong>Ductilidade:</strong> capacidade de deformar sem fraturar — materiais pouco dúcteis
-              tendem a trincar durante ou após a soldagem. <strong>Tenacidade:</strong> resistência a impactos —
-              importante em equipamentos sujeitos a cargas dinâmicas.</p>
-          </div>
-        </div>
-
-        <div class="quiz-q">
-          <div class="q-number">Questão 03</div>
-          <p>Por que a resistência à corrosão é importante na escolha de materiais para soldagem?</p>
-          <button class="show-btn" onclick="toggleAnswer(this)">▶ Ver resposta</button>
-          <div class="quiz-answer">
-            <p>Em ambientes agressivos (salinos, úmidos, químicos), a corrosão pode degradar a junta soldada,
-              comprometendo a integridade estrutural. Materiais com baixa resistência à corrosão podem requerer
-              tratamentos superficiais adicionais ou ser substituídos por ligas mais resistentes, como aços inoxidáveis
-              ou alumínio.</p>
-          </div>
-        </div>
-
-        <div class="quiz-q">
-          <div class="q-number">Questão 04</div>
-          <p>Converta 150°F para Celsius utilizando a fórmula aprendida no minicurso.</p>
-          <button class="show-btn" onclick="toggleAnswer(this)">▶ Ver resposta</button>
-          <div class="quiz-answer">
-            <p>Fórmula: (F − 32) × 5 ÷ 9<br><br>
-              (150 − 32) × 5 ÷ 9 = 118 × 5 ÷ 9 = 590 ÷ 9 ≈ <strong>65,6°C</strong></p>
-          </div>
-        </div>
-
-        <div class="quiz-q">
-          <div class="q-number">Questão 05</div>
-          <p>Qual material e processo de soldagem você escolheria para estruturas expostas a um ambiente marinho
-            (corrosivo) e por quê?</p>
-          <button class="show-btn" onclick="toggleAnswer(this)">▶ Ver resposta</button>
-          <div class="quiz-answer">
-            <p>Para ambiente marinho (corrosivo), o ideal seria utilizar <strong>aço inoxidável 316L</strong> (com
-              molibdênio, que aumenta a resistência à corrosão por cloretos) soldado pelo processo <strong>TIG</strong>
-              com argônio puro. Esse processo garante alta precisão, baixa contaminação da solda e excelente qualidade
-              metalúrgica da junta, essencial em ambientes agressivos.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="completion">
-        <div class="big-icon">🏆</div>
-        <h2>PARABÉNS!</h2>
-        <p>Você concluiu o Minicurso de Soldagem. Continue praticando e aprofundando seus conhecimentos em materiais e
-          processos de fabricação.</p>
-        <button class="restart-btn" onclick="goTo(0)">🔄 Recomeçar do início</button>
-      </div>
-
-      <div class="nav-btns">
-        <button class="nav-btn prev" onclick="goTo(5)">← Anterior: Tipos de Soldagem</button>
-      </div>
-    </div>
 
     </div>
   </main>
